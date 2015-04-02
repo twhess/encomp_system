@@ -1,13 +1,13 @@
 
 class Employee
-	attr_reader :first_name, :last_name
+	attr_accessor :first_name, :last_name
 	def initialize(first_name, last_name, phone, email)
 		@first_name = first_name.capitalize
 		@last_name = last_name.capitalize
 		@phone = phone
 		@email = email.downcase
-
 	end
+
 	def to_s
 		"Name: #{@first_name} #{@last_name} Phone:#{@phone} Email:#{@email}"
 	end
